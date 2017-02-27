@@ -27,12 +27,11 @@ def answer(s, n=1):
         for i in sorted_list:
             if i == sorted_list[0]:
                 equal_content = True
-                break
             else:
                 equal_content = False
                 break
 
     if equal_length == True and equal_content == True and len(sorted_list[0]) > 1:
         return len(sorted_list)
-        
+
     return answer(s, n+1)
