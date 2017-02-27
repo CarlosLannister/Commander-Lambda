@@ -1,6 +1,8 @@
 def answer(s, n=1):
-    equal_length = False
-    equal_content = False
+    if n > 200:
+        return 0
+    if s.isalpha() == False:
+        return 0
     new = [s[i:i+n] for i in range(0, len(s), n)]
 
     for i in new:
@@ -8,6 +10,7 @@ def answer(s, n=1):
             equal_length = True
         else:
             equal_length = False
+            break
 
 
     for j in range(len(s)):
@@ -18,13 +21,14 @@ def answer(s, n=1):
         sorted_list = []
         for i in new:
             list_of = list(i) #elements to lists
-            sorted_element = sorted(list_of) #sort list
-            back_to_string = ''.join(sorted_element)#list back to string
+            # sorted_element = sorted(list_of) #sort list
+            back_to_string = ''.join(list_of)#list back to string
             sorted_list.append(back_to_string) #append
 
         for i in sorted_list:
             if i == sorted_list[0]:
                 equal_content = True
+                break
             else:
                 equal_content = False
                 break
@@ -33,6 +37,3 @@ def answer(s, n=1):
         print(sorted_list)
         return len(sorted_list)
     return answer(s, n+1)
-
-w = answer('aaaaaaaaaaaaa')
-print(w)
