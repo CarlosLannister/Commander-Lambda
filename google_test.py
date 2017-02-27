@@ -1,9 +1,11 @@
-def answer(s):
-    n = 2
+
+def answer(s, n=1):
+    equal_length = False
+    equal_content = False
     new = [s[i:i+n] for i in range(0, len(s), n)]
 
     for i in new:
-        if len(new[0]) == len(i):
+        if len(i) == len(new[0]):
             equal_length = True
         else:
             equal_length = False
@@ -23,5 +25,4 @@ def answer(s):
 
     if equal_length == True and equal_content == True:
         return len(sorted_list)
-    n += 1
-    return answer(s)
+    return answer(s, n+1)
