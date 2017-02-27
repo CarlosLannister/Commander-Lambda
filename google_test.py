@@ -1,8 +1,7 @@
 def answer(s, n=1):
     if n > 200:
         return 0
-    if s.isalpha() == False:
-        return 0
+
     new = [s[i:i+n] for i in range(0, len(s), n)]
 
     for i in new:
@@ -34,6 +33,6 @@ def answer(s, n=1):
                 break
 
     if equal_length == True and equal_content == True and len(sorted_list[0]) > 1:
-        print(sorted_list)
         return len(sorted_list)
+        
     return answer(s, n+1)
