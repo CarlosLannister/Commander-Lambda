@@ -25,6 +25,3 @@ def answer(s):
         return len(sorted_list)
     n += 1
     return answer(s)
-
-l = answer('ababababababab')
-print(l)
