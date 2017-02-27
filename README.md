@@ -1,4 +1,4 @@
-## This is my attempt at a solution for the google foo.bar challenge Commander Lambda. It has passed 8/10 tests, Test 1 and Test 7 fail right now.
+## This is my attempt at a solution for the google foo.bar challenge Commander Lambda. It has passed 9/10 tests, Test 1 fails right now.
 
 ## The directions are as follows:
 
