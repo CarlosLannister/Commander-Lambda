@@ -1,4 +1,4 @@
-## This is a solution for the google foo.bar challenge Commander Lambda
+## This is my attempt at a solution for the google foo.bar challenge Commander Lambda. It is not yet solved but I feel im close.
 
 ## The directions are as follows:
 
