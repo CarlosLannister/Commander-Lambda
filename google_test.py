@@ -1,6 +1,4 @@
 def answer(s, n=1):
-    if n > 200:
-        return 0
 
     new = [s[i:i+n] for i in range(0, len(s), n)]
 
